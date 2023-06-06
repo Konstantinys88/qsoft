@@ -1,0 +1,27 @@
+//указывает браузеру учитывать любые границы и отступы в значениях, которые вы указываете для ширины и высоты элемента.
+html {
+    box-sizing: border-box;
+}
+//сбрасываем отступы
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+@import 'base/variables';
+@import 'block/body';
+@import 'block/header';
+@import 'block/title';
+@import 'block/frames';
+
+
+@import 'block/footer';
+
+
+
+// media Всегда подключается последним
+@import 'block/media';
+
